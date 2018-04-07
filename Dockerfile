@@ -26,4 +26,4 @@ WORKDIR /gogs
 
 CMD ./gogs web
 
-VOLUME /gogs/custom/conf/app.ini
+VOLUME /gogs/custom/conf/
