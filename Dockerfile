@@ -21,6 +21,6 @@ ENV USER root
 
 COPY --from=build /go/src/github.com/gogits/gogs /gogs
 
-ADD custom /gogs/custom
+#ADD custom /gogs/custom
 
-WORkDIR /gogs
+WORKDIR /gogs
