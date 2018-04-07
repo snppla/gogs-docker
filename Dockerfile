@@ -25,3 +25,5 @@ COPY --from=build /go/src/github.com/gogits/gogs /gogs
 WORKDIR /gogs
 
 CMD ./gogs web
+
+VOLUME /gogs/custom/conf/app.ini
