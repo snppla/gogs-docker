@@ -12,10 +12,10 @@ RUN go build -tags "sqlite"
 
 RUN rm -rf .git vendor conf docker pkg
 
-
+#############################
 from alpine:latest as run
 
-RUN apk add --update git openssh-keygen
+RUN apk add --update git openssh-keygen bash
 
 ENV USER root
 
